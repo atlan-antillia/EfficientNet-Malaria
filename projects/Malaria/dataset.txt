@@ -1,0 +1,3 @@
+The orignal Malaria_Cell_Images dataset used here has been taken from the following web site:
+
+https://data.lhncbc.nlm.nih.gov/public/Malaria/cell_images.zip

@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+efficientnetv2-b0/
+projects/Malaria/Malaria_Cell_Images/
+projects/Malaria/models/
