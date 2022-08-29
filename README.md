@@ -22,7 +22,7 @@
 
  This is an experimental Malaria Cell Images Classification project based on <b>efficientnetv2</b> in <a href="https://github.com/google/automl">Brain AutoML</a>.
 <br>
- The original Malaria Cell Images has been taken from the following web site:<br>
+ The original Malaria Cell Images dataset has been taken from the following web site:<br>
 <a href= "https://lhncbc.nlm.nih.gov/">
 <b>National Library of Medicine</b> Lister Hill National Center for Biomedical Communications
 </a>
