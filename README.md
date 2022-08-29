@@ -38,7 +38,7 @@ Malaria/cell_images.zip
 </h3>
  Please run the following command in your working directory:<br>
 <pre>
-git clone https://github.com/atlan-antillia/EfficientNet-Skin-Cancer.git
+git clone https://github.com/atlan-antillia/EfficientNet-Malaria.git
 </pre>
 You will have the following directory tree:<br>
 <pre>
