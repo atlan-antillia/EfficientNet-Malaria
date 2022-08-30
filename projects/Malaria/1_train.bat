@@ -2,9 +2,9 @@ rem 1_train.bat
 python ../../EfficientNetV2ModelTrainer.py ^
   --model_dir=./models ^
   --eval_dir=./eval ^
-  --model_name=efficientnetv2-s ^
+  --model_name=efficientnetv2-b0 ^
   --data_generator_config=./data_generator.config ^
-  --ckpt_dir=../../efficientnetv2-b0-21k-ft1k/model ^
+  --ckpt_dir=../../efficientnetv2-b0/model ^
   --optimizer=rmsprop ^
   --image_size=224 ^
   --eval_image_size=224 ^

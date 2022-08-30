@@ -1,4 +1,4 @@
-<h2>EfficientNet-Malaria (Updated: 2022/08/30)</h2>
+<h2>EfficientNet-Malaria (Updated: 2022/08/31)</h2>
 <a href="#1">1 EfficientNetV2 Malaria Cell Images Classification </a><br>
 <a href="#1.1">1.1 Clone repository</a><br>
 <a href="#1.2">1.2 Prepare Malaria Cell Images dataset</a><br>
@@ -174,9 +174,9 @@ rem 1_train.bat
 python ../../EfficientNetV2ModelTrainer.py ^
   --model_dir=./models ^
   --eval_dir=./eval ^
-  --model_name=efficientnetv2-s ^
+  --model_name=efficientnetv2-b0 ^
   --data_generator_config=./data_generator.config ^
-  --ckpt_dir=../../efficientnetv2-b0-21k-ft1k/model ^
+  --ckpt_dir=../../efficientnetv2-b0/model ^
   --optimizer=rmsprop ^
   --image_size=224 ^
   --eval_image_size=224 ^
@@ -223,7 +223,7 @@ Furthermore, it will generate a <a href="./projects/Malaris/eval/train_accuracie
 and <a href="./projects/Malaria/eval/train_losses.csv">train_losses</a> files
 <br>
 Training console output:<br>
-<img src="./asset/Malaria_train_console_output_at_epoch_39_0829.png" width="740" height="auto"><br>
+<img src="./asset/Malaria_train_console_output_at_epoch_36_0831.png" width="740" height="auto"><br>
 <br>
 Train_accuracies:<br>
 <img src="./projects/Malaria/eval/train_accuracies.png" width="640" height="auto"><br>
@@ -285,11 +285,11 @@ More experiments will be needed to improve accuracy.<br>
 
 <br>
 Inference console output:<br>
-<img src="./asset/Malaria_infer_console_output_at_epoch_39_0829.png" width="740" height="auto"><br>
+<img src="./asset/Malaria_infer_console_output_at_epoch_36_0831.png" width="740" height="auto"><br>
 <br>
 
 Inference result (inference.csv):<br>
-<img src="./asset/Malaria_inference_at_epoch_39_0829.png" width="740" height="auto"><br>
+<img src="./asset/Malaria_infer_at_epoch_36_0831.png" width="740" height="auto"><br>
 <br>
 <h2>
 <a id="6">6 Evaluation</a>
@@ -328,12 +328,12 @@ This evaluation command will generate <a href="./projects/Malaris/evaluation/cla
 <br>
 <br>
 Evaluation console output:<br>
-<img src="./asset/Malaria_evaluate_console_output_at_epoch_39_0829.png" width="740" height="auto"><br>
+<img src="./asset/Malaria_evaluate_console_output_at_epoch_36_0831.png" width="740" height="auto"><br>
 <br>
 
 <br>
 Classification report:<br>
-<img src="./asset/Malaria_classification_report_at_epoch_39_0829.png" width="740" height="auto"><br>
+<img src="./asset/Malaria_classification_report_at_epoch_36_0831.png" width="740" height="auto"><br>
 <br>
 Confusion matrix:<br>
 <img src="./projects/Malaria/evaluation/confusion_matrix.png" width="740" height="auto"><br>
