@@ -150,26 +150,14 @@ class EfficientNetV2Inferencer:
       print("\n--- image_path {}".format(FLAGS.image_path))
       image_size  = FLAGS.eval_image_size
       for image_file in image_files:
-        
-        image = tf.io.read_file(image_file)
-
-        image = preprocessing.preprocess_image(
-          image, 
-          image_size  = FLAGS.eval_image_size, 
-          is_training = False)
-        # A tensor with a length 1 axis inserted at index axis.
-        #image  = image.astype('float32')/255.0
-        """
-        #PNG file -> color_mode='rgba'
-        #PIL image instance
+                
         image = tf.keras.preprocessing.image.load_img(image_file, target_size=(image_size, image_size),
-            color_mode = 'rgba',
+            color_mode = 'rgb',
             interpolation='nearest')
 
         image = tf.keras.preprocessing.image.img_to_array(image)
-        #image = (image - 128.) / 128.
-        """
-
+        image = image*1.0/255.0
+      
         image  = tf.expand_dims(image, 0)
         
         logits = self.model(image, training=False)
